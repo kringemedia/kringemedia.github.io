@@ -60,6 +60,10 @@ li{list-style: none;}
 	src:url('../fonts/noval.otf');
 }
 
+@font-face{
+	font-family:hobo;
+	src:url(../fonts/hobo.otf);
+}
 /*-------Cover------*/
 
 
@@ -70,11 +74,17 @@ li{list-style: none;}
 	flex-direction: column;
 	justify-content:center;
 	align-items:center;
-	text-transform: uppercase;
 	height: 90vh;
-	background: url(../images/1.50.jpg) center fixed;
+	background: url(../images/1.50w.jpg) center fixed;
 	background-size: cover;
 	overflow: hidden;
+}
+
+.kringelogo{
+	background: url(../images/logo.png) center center no-repeat;
+	background-size: 260px auto;
+	height: 200px;
+	width: 300px;
 }
 
 .button{
@@ -102,18 +112,21 @@ li{list-style: none;}
 	height:auto;
 	text-align: center;
 	font-family: regular;
-	color: #fff;
+	color: #000;
+	margin-top: -100px;
 }
 
 #text>h1{
-	font-family: regular;
-	font-size: 50px;
+	font-family: hobo;
+	font-size: 80px;
 }
 
 #text>p{
 	font-family: noval;
-	font-size: 19px;
-	margin-top: -20px;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: -60px;
+	color: #222;
 }
 
 
@@ -135,8 +148,8 @@ li{list-style: none;}
 	height: 60px;
 	width: 200px;
 	padding:10px;
-	background: url('../images/logo.svg') center center no-repeat;
-	background-size: 200px auto;
+	background: url('../images/logo.png') center center no-repeat;
+	background-size: 150px auto;
 }
 
 #menu{
@@ -165,6 +178,8 @@ li{list-style: none;}
 
 #about{
 	min-height: 300px;
+	width: 80%;
+	margin: auto;
 	display: flex;
 }
 
@@ -191,37 +206,9 @@ p{
 }
 
 
-#dp{
-	height: 300px;
-	min-width: 200px;
-	max-width: 300px;
+#social{
 	margin: auto;
-	background: url("../images/dp3.jpg") no-repeat top center;
-	background-size: 400px;
-	margin-top: 50px;
-	border: 10px solid #fff;
-	box-shadow:2px 2px 10px #333;
 }
-
-#pi{
-	width: 250px;
-	display: flex;
-	justify-content:left;
-	margin-top: -20px;
-	margin-left: 30px;
-}
-
-h5{
-	line-height: 10px;
-	font-family: noval;
-	font-size: 17px;
-	font-weight: bolder;
-
-}
-
-hr{background-color: #ddd; height: 1px; border:none; line-height: 5px;}
-
-
 
 #social>ul>a>li{
 	height: 50px;
